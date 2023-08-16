@@ -5,16 +5,16 @@ import static java.lang.Integer.parseInt;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] firstLine = scanner.nextLine().split(" ");
-        String[] secondLine = scanner.nextLine().split(" ");
-        String[] thirdLine = scanner.nextLine().split(" ");
+        String[] firstArray = scanner.nextLine().split(" ");
+        String[] secondArray = scanner.nextLine().split(" ");
+        String[] thirdArray = scanner.nextLine().split(" ");
 
         scanner.close();
 
         System.out.println("================================");
-        System.out.println(String.format("%-15s", firstLine[0]) + String.format("%03d", Integer.parseInt(firstLine[1])));
-        System.out.println(String.format("%-15s", secondLine[0]) + String.format("%03d", Integer.parseInt(secondLine[1])));
-        System.out.println(String.format("%-15s", thirdLine[0]) + String.format("%03d", Integer.parseInt(thirdLine[1])));
+        System.out.println(String.format("%-15s", firstArray[0]) + String.format("%03d", Integer.parseInt(firstArray[1])));
+        System.out.println(String.format("%-15s", secondArray[0]) + String.format("%03d", Integer.parseInt(secondArray[1])));
+        System.out.println(String.format("%-15s", thirdArray[0]) + String.format("%03d", Integer.parseInt(thirdArray[1])));
         System.out.println("================================");
     }
 }
