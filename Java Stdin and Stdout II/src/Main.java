@@ -3,13 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int myInt = scanner.nextInt();
-        double myDouble = scanner.nextDouble();
-        String myString = scanner.next();
-        myString += scanner.nextLine();
 
-        System.out.format("String: %s%n", myString);
-        System.out.println("Double: " + myDouble);
-        System.out.format("Int: %d", myInt);
+        // Read an integer
+        int integerInput = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline
+
+        // Read a double
+        double doubleInput = scanner.nextDouble();
+        scanner.nextLine(); // Consume the newline
+
+        // Read a string
+        String stringInput = scanner.nextLine();
+
+        // Close the scanner
+        scanner.close();
+
+        // Print the outputs
+        System.out.println("String: " + stringInput);
+        System.out.println("Double: " + doubleInput);
+        System.out.println("Int: " + integerInput);
     }
 }
