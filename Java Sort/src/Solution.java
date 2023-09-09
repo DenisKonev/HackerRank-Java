@@ -26,12 +26,10 @@ public class Solution
 {
     static final Comparator<Student> CUSTOM_ORDER = new Comparator<Student>() {
         public int compare(Student s1, Student s2) {
-            //return Double.compare(s2.getCgpa(), s1.getCgpa());
             int cpgaCompRes = Double.compare(s2.getCgpa(), s1.getCgpa());
 
-            if (cpgaCompRes == 0) {
+            if (cpgaCompRes == 0)
                 return s1.getFname().compareTo(s2.getFname());
-            }
             else
                 return cpgaCompRes;
         }
